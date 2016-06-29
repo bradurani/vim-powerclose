@@ -1,13 +1,13 @@
 # vim-powerclose
 A vim plugin allowing you to close any type of window with a single function
 
-vim-powerclose provides a single function called `powerclose#close`
+`vim-powerclose` provides a single function called `powerclose#close`
 
 It is able to close the following:
-- a buffer, saving first (with '`:w` `:bd`)
-- a new empty buffer (with `:bd!`)
-- a readonly buffer (with `:bd!`)
-- a [neovim](https://neovim.io/) terminal (with `:bd!`)
+- a buffer, saving first if it is unsaved (`:w` `:bd`)
+- a new empty buffer (`:bd!`)
+- a readonly buffer (`:bd!`)
+- a [neovim](https://neovim.io/) terminal (`:bd!`)
 
 It intentionally will not close a new buffer that has content in it
 
