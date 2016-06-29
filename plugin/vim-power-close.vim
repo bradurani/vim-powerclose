@@ -1,5 +1,5 @@
 function! powerclose#close()
-if bufname('%') == '' && line('$') == 1 && getline(1) == '' "new empty buffer
+  if bufname('%') == '' && line('$') == 1 && getline(1) == '' "new empty buffer
     :bd!
   elseif &readonly
     :bd!
@@ -9,5 +9,5 @@ if bufname('%') == '' && line('$') == 1 && getline(1) == '' "new empty buffer
     :w
     :bd
   endif
-end
+endfunction
 
