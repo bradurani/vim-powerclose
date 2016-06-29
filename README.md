@@ -26,5 +26,5 @@ Plug 'bradurani/vim-powerclose'
 ```
 
 ### Contributing
-Just open a pull request 🤗. Report issues on the [https://github.com/bradurani/vim-powerclose/issues](issues page).
+Just open a pull request 🤗. Report issues on the [issues page](https://github.com/bradurani/vim-powerclose/issues).
 
