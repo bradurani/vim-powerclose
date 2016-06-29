@@ -1,0 +1,15 @@
+*vim-power-close.txt* A vim plugin allowing you to close any type of window with a single function
+
+provides a single function called `powerclose#close`
+
+It is able to close the following:
+- a buffer, saving first (with '`:w` `:bd`)
+- a new empty buffer (with `:bd!`)
+- a readonly buffer (with `:bd!`)
+- a [neovim](https://neovim.io/) terminal (with `:bd!`)
+
+vim-power-close do **not** map any keys by default. To use it you will need to
+create a mapping such as:
+
+nnoremap <leader>q :call powerclose#close()<CR>
+
