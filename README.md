@@ -9,6 +9,9 @@ It is able to close the following:
 - a readonly buffer (with `:bd!`)
 - a [neovim](https://neovim.io/) terminal (with `:bd!`)
 
+It intentionally will not close a new buffer that has content in it
+
+### Mapping
 vim-powerclose do **not** map any keys by default. To use it you will need to
 create a mapping such as:
 ```
