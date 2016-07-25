@@ -5,6 +5,8 @@ function! powerclose#close()
     :bd!
   elseif &buftype ==# 'nofile'
     :bd!
+  elseif &buftype ==# 'quickfix'
+    :bd!
   elseif bufname('%') ==# '' && line('$') ==# 1 && getline(1) ==# '' "new empty buffer
     :bd!
   else
