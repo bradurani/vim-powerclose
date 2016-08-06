@@ -1,6 +1,6 @@
 function! powerclose#close()
-  if bufname('%') ==# '[command]'
-    <c-c>
+  if bufname('%') ==# '[Command Line]'
+    call feedkeys("\<C-c>\<C-c>")
   elseif &readonly
     :bd!
   elseif &buftype ==# 'terminal' "neovim terminal in insert mode
