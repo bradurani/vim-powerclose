@@ -8,6 +8,7 @@ It is able to close the following:
 - a new empty buffer (`:bd!`)
 - a readonly buffer (`:bd!`)
 - a [neovim](https://neovim.io/) terminal (`:bd!`)
+- the command window (`<c-c><c-c>`)
 
 It intentionally will not close a new buffer that has content in it
 
