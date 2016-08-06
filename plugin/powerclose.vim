@@ -1,5 +1,7 @@
 function! powerclose#close()
-  if &readonly
+  if bufname('%') ==# '[command]'
+    <c-c>
+  elseif &readonly
     :bd!
   elseif &buftype ==# 'terminal' "neovim terminal in insert mode
     :bd!
